@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load django_tables2 %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h2>Titanic Passenger List</h2>
+        <a href="{% url 'passenger_create' %}" class="btn btn-success mb-3">Add New Passenger</a>
+
+        {% render_table table %}
+    </div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="alert alert-success" role="alert">
+            Operation completed successfully!
+        </div>
+        <a href="{% url 'titanic_list' %}" class="btn btn-primary">Back to Titanic List</a>
+    </div>
+{% endblock %}
